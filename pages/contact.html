@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs Golf du CEFii</title>
+    <meta name="accueil" content="Bienvenue au Golf du CEFii !">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div>
+        <input type="checkbox" class="btn-burger" id="btnburger">
+        <label class="iconburger" for="btnburger">
+            <div class="burgerbar bardiag diago1"></div>
+            <div class="burgerbar barhor"></div>
+            <div class="burgerbar bardiag diago2"></div>
+        </label>
+        <nav>
+            <a class="navmenu" href="../index.html" title="retour accueil">
+                <img class="logo" src="../images/logo/logo-golf.png" alt="logo CEFii Golf">
+                <!-- <img class="ball" src="../images/logo/balle.png" height="50px" width="50px">
+                <img class="fx-left" src="../images/logo/fx-left.png" height="30px" width="auto">
+                <img class="fx-right" src="../images/logo/fx-right.png" height="30px" width="auto"> -->
+            </a>
+            <div class="burger-menu">
+                <ul class="navmenu">
+                    <li><a href="../index.html">accueil</a></li>
+                    <li><a href="#">parcours</a></li>
+                    <li><a href="#">le domaine <i class="fa-solid fa-chevron-right fa-rotate-90"></i></a>
+                        <ul class="sous-menu">
+                            <li><a href="#">le parc</a></li>
+                            <hr class="hr-sousmenu-tab" color="#BDA672">
+                            <li><a href="#">hôtel</a></li>
+                            <hr class="hr-sousmenu-tab" color="#BDA672">
+                            <li><a href="#">restaurant</a></li>
+                            <hr class="hr-sous-menu" color="#BDA672">
+                        </ul>
+                    </li>
+                    <li><a href="#">les tournois</a></li>
+                    <li><a id="contact" href="#">tarifs &amp; contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <hr class="hr-top-mobile" color="#BDA672">
+        <header>
+            <div>
+                <h1>Bienvenue <br>au Golf du CEFii !</h1>
+                <div class="item">
+                    <div class="item1">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <h3>Nos événements</h3>
+                        <p>Inscrivez-vous au prochain<br> tournoi de Golf</p>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="item2">
+                        <i class="fa-solid fa-golf-ball-tee"></i>
+                        <h3>Nos services</h3>
+                        <p>Découvrez tous nos services<br> disponibles à l'année</p>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="item3">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <h3>Information</h3>
+                        <p>Les parcours sont<br> momentanément fermés</p>
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="maincontact">
+            <section>
+                <h2>Tarifs</h2>
+                <hr class="hr-table-top" color="#BDA672">
+                <p>
+                    Le CEFii Golf vous propose également des stages, avec ou sans hébergements, pendant les vacances
+                    scolaires. Découverte ou perfectionnement, les stages sont accessibles à différents niveaux.
+                </p>
+                <table class="table-tarifs">
+                    <tr>
+                        <th></th>
+                        <th>Tarifs publics</th>
+                        <th>Tarifs membres</th>
+                    </tr>
+                    <tr>
+                        <td>9 trous</td>
+                        <td>30 €</td>
+                        <td>20 €</td>
+                    </tr>
+                    <tr>
+                        <td>18 trous*</td>
+                        <td>45 €</td>
+                        <td>29 €</td>
+                    </tr>
+                    <tr>
+                        <td>2 jours de golf à volonté</td>
+                        <td>110 €</td>
+                        <td>90 €</td>
+                    </tr>
+                    <tr>
+                        <td>3 jours de golf à volonté</td>
+                        <td>150 €</td>
+                        <td>120 €</td>
+                    </tr>
+                    <tr>
+                        <td>7 jours de golf à volonté</td>
+                        <td>250 €</td>
+                        <td>200 €</td>
+                    </tr>
+                </table>
+                <small>* Chariot manuel et seau d'échauffement offerts avec votre green-fee 18 trous !</small>
+                <hr class="hr-table-bottom" color="#BDA672">
+            </section>
+            <section class="formulaire">
+                <h2 class="form-h2">Contact</h2>
+                <hr class="hr-contact-top" color="#BDA672">
+                <p>Devenez membre dès aujourd'hui !
+                    <br>Remplissez le formulaire et nous vous contacterons !
+                </p>
+                <div class="formuflex">
+                    <form action="" class="w45">
+                        <div>
+                            <label class="label-contact" for="name">Votre nom</label>
+                            <input class="input-contact" type="text" id="name" name="name" required
+                                placeholder="DUPONT">
+                        </div>
+                        <div>
+                            <label class="label-contact" for="email">Votre adresse mail</label>
+                            <input class="input-contact" type="email" id="email2" name="email" required
+                                placeholder="exemple@domaine.com">
+                        </div>
+                        <div>
+                            <label class="label-contact" for="subject">Sujet</label>
+                            <select name="subject" id="subject" required>
+                                <option value="">Choisissez un sujet</option>
+                                <option value="contact">Demande de contact</option>
+                                <option value="abo">Abonnement</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="label-contact" for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                placeholder="Votre demande ici"></textarea>
+                        </div>
+                        <div class="btn-div">
+                            <input type="submit" value="Envoyer" class="btn">
+                        </div>
+                    </form>
+                    <div>
+                        <br>
+                        <iframe class="fomuflex maps"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10789.026356538841!2d-0.5590805!3d47.4654291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf0a4ea6efc45f0a0!2sCEFii%20-%20Ecole%20Sup%C3%A9rieure%20du%20Web!5e0!3m2!1sfr!2sfr!4v1625579403774!5m2!1sfr!2sfr"
+                            width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <hr class="hr-contact-bottom" color="#BDA672">
+            </section>
+
+            <article class="faq">
+                <h2 class="h2-faq">Foire aux questions</h2>
+                <hr class="hr-faq-top" color="#BDA672">
+                <ul>
+                    <li class="question">
+                        <h3>Puis-je accéder au CEFii Golf sans être membre ?</h3>
+                        <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
+                        <p class="faq-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea ullam
+                            pariatur
+                            accusantium officiis modi!</p>
+                    </li>
+                    <li class="question">
+                        <h3>Je souhaite essayer le golf, comment faire ?</h3>
+                        <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
+                        <p class="faq-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea ullam
+                            pariatur
+                            accusantium officiis modi!</p>
+                    </li>
+                    <li class="question">
+                        <h3>Comment effectuer une réservation de groupe ?</h3>
+                        <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
+                        <p class="faq-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea ullam
+                            pariatur
+                            accusantium officiis modi!</p>
+                    </li>
+                    <li class="question">
+                        <h3>Mes enfants peuvent-ils jouer au golf ?</h3>
+                        <i class="fa-solid fa-chevron-right fa-rotate-90"></i>
+                        <p class="faq-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea ullam
+                            pariatur
+                            accusantium officiis modi!</p>
+                    </li>
+                </ul>
+                <hr class="hr-faq-bottom" color="#BDA672">
+            </article>
+            <aside>
+                <ul class="partenaire">
+                    <li>
+                        <a href="https://www.ffgolf.org/" target="_blank" title="site du FF Golf">
+                            <img class="svg1" src="../svg/ffgolf.svg" alt="logo ffgolf" width="260" height="130">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://eu.ping.com/fr-fr" target="_blank" title="Site partenaire PING">
+                            <img class="svg2" src="../svg/ping.svg" alt="logo PING" width="260" height="130">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.taylormadegolf.com/" target="_blank" title="Site partenaire TaylorMade">
+                            <img class="svg3" src="../svg/TaylorMade.svg" alt="logo TaylorMade" width="260"
+                                height="130">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="https://www.titleist.com.fr/" target="_blank" title="Site partenaire Titleist">
+                            <img class="svg4" src="../svg/titleist.svg" alt="logo Titleist" width="260" height="130">
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+        <hr class="hr-top-footer-mobile" color="#BDA672">
+        <footer>
+            <div class="flex">
+                <div class="footermenu">
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="#">Parcours</a></li>
+                        <li><a href="#">Le domaine</a></li>
+                        <li><a href="#">Les tournois</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <address>
+                        <a href="https://goo.gl/maps/NFBdbtA4TdEaQ6XdA" target="_blank" title="CEFii Golf Adresse">
+                            <i class="fa-solid fa-location-dot logomaps"></i><br>
+                        </a>
+                        18 rue du Green<br>
+                        49049 GOLF-LAND
+                    </address>
+                </div>
+                <div>
+                    <h3>Suivez-nous !</h3>
+                    <div class="footerlinks">
+                        <a href="https://www.instagram.com/" target="_blank" title="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://fr-fr.facebook.com/" target="_blank" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <hr class="hr-bottom" color="#ffffff">
+                <p class="copy">&copy; Copyright | Production interne | &reg; Tous droits réservés</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
